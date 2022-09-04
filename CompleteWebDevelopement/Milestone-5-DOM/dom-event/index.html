@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event JavaScript</title>
+</head>
+
+<body>
+    <!-- <h1>Wellcome To JavaScript</h1>
+    <button onclick="console.log(7)">Read More</button>
+    <button onclick="console.log('Real All')">Read Anything</button>
+    <button onclick="document.body.style.backgroundColor='black'">Read Anything</button>
+    <button id="darkMode" onclick="darkMode()">Dark Mode</button>
+
+    <button id="golden-rod">Color</button>
+    <script>
+        document.getElementById("golden-rod").addEventListener('click', function () {
+            document.body.style.backgroundColor = "goldenrod";
+        });
+    </script> -->
+
+
+    <h1>Wellcome To JavaScript</h1>
+
+    <h3 id="show-name">My Love</h3>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br><br>
+
+    <button onclick="love()">Love</button>
+    <button id="show-name2">Love2</button>
+    <script>
+        function love() {
+            const name = document.getElementById("show-name");
+            name.innerText = 'Fatema khanom';
+        }
+
+        document.getElementById("show-name2").addEventListener('click', function () {
+            const name2 = document.getElementById("show-name");
+            name2.innerText = 'Ety khanom';
+        }
+        );
+
+        document.getElementById('btn-update').addEventListener('click', function () {
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+
+            const h3 = document.getElementById('show-name');
+            h3.innerText = inputText;
+            inputField.value = '';
+        })
+    </script>
+
+    <script src="event.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .btn-button {
+            border-radius: 5px;
+            color: azure;
+            padding: 5px 20px;
+            background-color: #0072cf;
+        }
+
+        .btn-button:hover {
+            color: black;
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="text-center">
+        <h1 class="text-3xl font-bold m-5">Money Master</h1>
+    </div>
+    <main class="flex justify-center">
+        <div class="grid grid-cols-2 gap-4 align-middle w-9/12 bg-blue-200">
+            <div>
+                <img class="w-9/12"
+                    src="https://images.unsplash.com/photo-1642751227050-feb02d648136?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                    alt="">
+            </div>
+            <div class="self-center">
+                <h5 class="text-center text-xl">Income</h5>
+                <label for="">Income: </label>
+                <input id="income-field" class="m-2" type="text">
+                <h5 class="text-center text-xl">Expenses</h5>
+                <label for="">Food: </label>
+                <input id="food-field" class="m-2" type="text"> <br>
+                <label for="">Rent: </label>
+                <input id="rent-field" class="m-2" type="text"><br>
+                <label for="">Clothes: </label>
+                <input id="clothes-field" class="m-2" type="text"><br>
+                <button id="calculate-btn" class="btn-button">Calculate</button>
+                <h4 class="text-center text-xl font-semibold">Total Expenses: <span id="total-expenses">00</span></h4>
+                <h4 class="text-center text-xl font-semibold">Balance: <span id="total-balance">00</span></h4>
+                <label for="">Save: </label>
+                <input id="parsent-field" class="m-2" type="text">
+                <span>%</span>
+                <button id="save-amount-btn" class="btn-button">Save</button>
+                <h4 class="text-center text-xl font-semibold">Saving Amount: <span>00</span></h4>
+                <h4 id="remaining-balance" class="text-center text-xl font-semibold">Remaining Balance: <span>00</span></h4>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="utility.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
